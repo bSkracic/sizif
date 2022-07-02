@@ -1,0 +1,17 @@
+<networkDto>
+    <name>new-network</name>
+    <nodes>
+        <node>
+            <id>0</id>
+            <name>iuda</name>
+            <image>busybox</image>
+            <containerId>nekiId</containerId>
+        </node>
+        <node>
+            <id>0</id>
+            <name>willow</name>
+            <image>busybox</image>
+            <containerId>nekiId</containerId>
+        </node>
+    </nodes>
+</networkDto>

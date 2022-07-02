@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="networkDto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long" minOccurs="0" />
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="nodes">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element  maxOccurs="unbounded" name="node" type="node"/>
+                    </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="node">
+        <xs:sequence>
+            <xs:element name="id" minOccurs="0" type="xs:long" />
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="image"  type="xs:string"/>
+            <xs:element name="containerId" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

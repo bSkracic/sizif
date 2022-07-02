@@ -1,0 +1,28 @@
+<element name="networkDto" xmlns="http://relaxng.org/ns/structure/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    <optional>
+        <element name="id">
+            <data type="long"/>
+        </element>
+    </optional>
+    <element name="name">
+        <text/>
+    </element>
+    <element name="nodes">
+        <oneOrMore>
+            <element name="node">
+                <optional>
+                    <element name="id">
+                        <data type="long"/>
+                    </element>
+                </optional>
+                <element name="name">
+                    <text/>
+                </element>
+                <element name="image">
+                    <text/>
+                </element>
+            </element>
+        </oneOrMore>
+    </element>
+</element>
